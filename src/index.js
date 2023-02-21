@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import BookList from "./pages/BookList";
+import LendRequest from "./pages/LendRequest";
 
 export default function App() {
   return (
@@ -14,6 +16,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="booklist" element={<BookList />} />
+          <Route path="lendrequest" element={<LendRequest />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
