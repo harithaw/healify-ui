@@ -4,21 +4,24 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
-import BookList from "./pages/BookList";
 import LendRequest from "./pages/LendRequest";
+import Inventory from "./pages/Inventory";
+
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Layout/>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="booklist" element={<BookList />} />
+          <Route path="inventory" element={<Inventory />} />
           <Route path="lendrequest" element={<LendRequest />} />
           <Route path="*" element={<NoPage />} />
-        </Route>
+        
       </Routes>
+      
     </BrowserRouter>
   );
 }

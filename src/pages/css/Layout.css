@@ -1,0 +1,20 @@
+ul{
+    list-style-type:none;
+    margin:0;
+    width:200px;
+    background-color:white;
+}
+
+li>a{
+    display:block;
+    color:Black;
+    padding:8px 17px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li>a:hover{
+    background-color: grey;
+    color: white;
+}
