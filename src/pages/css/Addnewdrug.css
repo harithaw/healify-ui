@@ -1,6 +1,6 @@
 table{
     background-color: beige;
-    border-color: 1px solid black;
+
 }
 
 .box{
@@ -11,7 +11,7 @@ table{
     border-radius: 6px;
     padding:0 22px;
     font-size:16px;
-    color:#555;
+   
 
 }
 
@@ -29,7 +29,7 @@ table{
     top: -80px;
     line-height: 40px;
     border-radius: 6px;
-    border-color: black;
+    
     padding:0 22px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -42,9 +42,7 @@ table{
     padding-inline:13px;
     line-height: 35px;
     
-    
 
-     
     
 }
 

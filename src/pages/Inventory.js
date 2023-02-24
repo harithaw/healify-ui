@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './css/inventory.css'
 import { FaPen,FaTrashAlt } from 'react-icons/fa';
-import './LendRequest'
+
 import { Outlet, Link } from "react-router-dom";
 import {useState,useEffect} from 'react'
 import axios from 'axios'
@@ -21,7 +21,8 @@ const Inventory = () => {
 
 	return (<div>
         <h1 >Inventory</h1>
-        <button><Link to="/Addnewdrug">Add New Drug</Link></button>
+        <button className='btn'><Link to="/Addnewdrug">Add New Drug</Link></button>
+        <button className='btn'><Link to="/UpdateDrug">Update Drug</Link></button>
         <table>
           <tbody><tr><th>ID</th>
               <th>Drug Name</th>
