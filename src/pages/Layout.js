@@ -5,6 +5,7 @@ import './css/Layout.css'
 const Layout = () => {
   return (
     <>
+    
       <nav>
         <ul>
           <li>
@@ -21,7 +22,7 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-
+      
       <Outlet />
     </>
   )

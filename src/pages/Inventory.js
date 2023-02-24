@@ -5,7 +5,7 @@ import './css/inventory.css'
 const Inventory = () => {
 	const navigate = useNavigate();
 	return (<div>
-        <h1 className='primary'>Inventory</h1>
+        <h1 >Inventory</h1>
         <table>
           <tbody><tr><th>ID</th>
               <th>Drug Name</th>
@@ -17,9 +17,22 @@ const Inventory = () => {
               <th>Unit Price</th>
               <th>Actions</th>
               </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
             </tbody>
             </table>
             </div>
+
+            
 			);
 };
 
