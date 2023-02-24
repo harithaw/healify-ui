@@ -18,7 +18,7 @@ const Layout = () => {
             <Link to="/Profile">Profile</Link>
           </li>
           <li>
-            <Link to="/contact">LogOut</Link>
+            <Link to="/Search">Search</Link>
           </li>
         </ul>
       </nav>

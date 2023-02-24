@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Inventory from "./pages/Inventory";
 import Addnewdrug from "./pages/Addnewdrug";
 import UpdateDrug from "./pages/UpdateDrug";
+import Search from "./pages/Search";
 
 
 export default function App() {
@@ -24,7 +25,8 @@ export default function App() {
           <Route path="Addnewdrug" element={<Addnewdrug />} />
           <Route path="UpdateDrug" element={<UpdateDrug />} />
           <Route path="Profile" element={<Profile />} />
-        
+          <Route path="Search" element={<Search />} />
+
       </Routes>
       
     </BrowserRouter>
