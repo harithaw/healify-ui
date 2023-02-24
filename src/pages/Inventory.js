@@ -4,10 +4,21 @@ import './css/inventory.css'
 import { FaPen,FaTrashAlt } from 'react-icons/fa';
 import './LendRequest'
 import { Outlet, Link } from "react-router-dom";
-
+import {useState,useEffect} from 'react'
+import axios from 'axios'
 
 const Inventory = () => {
 	const navigate = useNavigate();
+
+  //getting data from backend
+  const [listOfInventories,setListOfInventories]=useState([])
+
+  useEffect(()=>{
+    axios.get("https://healify-api.onrender.com/inventories/all").then((response)=>{
+      setListOfInventories(response.data)
+    })
+  },[])
+
 	return (<div>
         <h1 >Inventory</h1>
         <button><Link to="/Addnewdrug">Add New Drug</Link></button>
@@ -22,18 +33,21 @@ const Inventory = () => {
               <th>Unit Price</th>
               <th>Actions</th>
               </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><button> <FaPen/></button>
-                <button><FaTrashAlt/></button></td>
-              </tr>
+              {listOfInventories.map((inventory)=>{
+                return(
+                  <tr>
+                    <td>{inventory.mId}</td>
+                    <td>{inventory.mName}</td>
+                    <td>{inventory.mManufacture}</td>
+                    <td>{inventory.mSupplier}r</td>
+                    <td>{inventory.mNDC}</td>
+                    <td>{inventory.mExpDate}</td>
+                    <td>{inventory.mQuantity}</td>
+                    <td>{inventory.mPrice}</td>
+                    <td><button><FaPen/></button><button><FaTrashAlt/></button></td>
+                  </tr>
+                )
+              })}
             </tbody>
             </table>
             </div>
