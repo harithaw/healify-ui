@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './css/inventory.css'
 import { FaPen,FaTrashAlt } from 'react-icons/fa';
-import './LendRequest'
+
 import { Outlet, Link } from "react-router-dom";
 
 
