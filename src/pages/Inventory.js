@@ -10,7 +10,8 @@ const Inventory = () => {
 	const navigate = useNavigate();
 	return (<div>
         <h1 >Inventory</h1>
-        <button><Link to="/Addnewdrug">Add New Drug</Link></button>
+        <button className='btn'><Link to="/Addnewdrug">Add New Drug</Link></button>
+        <button className='btn'><Link to="/UpdateDrug">Update Drug</Link></button>
         <table>
           <tbody><tr><th>ID</th>
               <th>Drug Name</th>
