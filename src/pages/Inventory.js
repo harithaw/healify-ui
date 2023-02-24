@@ -1,6 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './css/inventory.css'
+import { FaPen,FaTrashAlt } from 'react-icons/fa';
+
 
 const Inventory = () => {
 	const navigate = useNavigate();
@@ -26,7 +28,8 @@ const Inventory = () => {
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
+                <td><button> <FaPen/></button>
+                <button><FaTrashAlt/></button></td>
               </tr>
             </tbody>
             </table>

@@ -1,7 +1,27 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
 body {
     font-family: 'lato', sans-serif;
 
 }
-table{
+table, td, th {
     border: 1px solid;
-}
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
