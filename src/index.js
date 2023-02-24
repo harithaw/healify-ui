@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-
+import Profile from "./pages/Profile";
 
 
 import Inventory from "./pages/Inventory";
@@ -23,6 +23,7 @@ export default function App() {
           
           <Route path="Addnewdrug" element={<Addnewdrug />} />
           <Route path="UpdateDrug" element={<UpdateDrug />} />
+          <Route path="Profile" element={<Profile />} />
         
       </Routes>
       
