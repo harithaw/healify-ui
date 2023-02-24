@@ -2,12 +2,15 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import './css/inventory.css'
 import { FaPen,FaTrashAlt } from 'react-icons/fa';
+import './LendRequest'
+import { Outlet, Link } from "react-router-dom";
 
 
 const Inventory = () => {
 	const navigate = useNavigate();
 	return (<div>
         <h1 >Inventory</h1>
+        <button><Link to="/Addnewdrug">Add New Drug</Link></button>
         <table>
           <tbody><tr><th>ID</th>
               <th>Drug Name</th>

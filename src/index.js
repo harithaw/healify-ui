@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import LendRequest from "./pages/LendRequest";
 import Inventory from "./pages/Inventory";
+import Addnewdrug from "./pages/Addnewdrug";
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="inventory" element={<Inventory />} />
           <Route path="lendrequest" element={<LendRequest />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="Addnewdrug" element={<Addnewdrug />} />
         
       </Routes>
       
